@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Notes</title>
+  <meta charset="utf-8">
+  {% load static %}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+	<script src="https://unpkg.com/vue-resource@1.5.1/dist/vue-resource.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+
+<body>
+
+
+<h1>Hello world!</h1>
+	<div id="hello_world">
+    <input
+      id="none"
+      type="text"
+      placeholder="this is a placeholder"
+      v-on:keyup="write_message"
+      v-model="message"
+    />
+    <h2 class="purple">${message}</h2>
+  </div>
+
+
+
+<script src="{% static 'index.js' %}"></script>
+
+</body>
+</html>
