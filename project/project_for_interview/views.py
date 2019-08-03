@@ -6,4 +6,5 @@ def test(request):
 	return HttpResponse('ok')
 
 def index(request):
-	return HttpResponse('ok')
+	return render(request, 'project_for_interview/index.html')
+	# return HttpResponse('ok')

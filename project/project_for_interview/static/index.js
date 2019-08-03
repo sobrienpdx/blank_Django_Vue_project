@@ -1,5 +1,5 @@
 var app = new Vue({
-    el: '#hello_world',
+    el: '#hello_hopscotch',
 		delimiters: ['${','}'],
 		http: {
         // root: 'http://localhost:8000/api/',
@@ -9,6 +9,8 @@ var app = new Vue({
 		},
     data: {
 				message:null,
+        message2:null,
+        pushed:false,
 
 
 
@@ -21,6 +23,18 @@ var app = new Vue({
         console.log(this.message)
 			},
 
+      write_another_message: function(){
+        console.log(this.message2)
+      },
+
+      be_ironic: function(){
+        console.log(this.pushed)
+        this.pushed = !this.pushed
+      },
+      jump_page: function(){
+        console.log("escape")
+        window.location.href = 'jquery_page';
+      },
 
 
 
